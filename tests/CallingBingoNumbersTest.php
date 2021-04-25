@@ -34,5 +34,17 @@ final class CallingBingoNumbersTest extends TestCase {
         $this->assertIsInt($valueNumber);
     }
 
+    /**
+     * Validation of range allowed [1-75]
+     * 
+     * @return void
+     */
+    public function testRangeNumberIsValid() {
 
+        $obj = new CallingBingoNumbers();
+        $valueNumber = $obj->callOneNumber();
+        $range = range(1, 75);
+
+        $this->assertContains($valueNumber, $range);
+    }
 }
