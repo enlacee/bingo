@@ -1,0 +1,25 @@
+{
+    "name": "anibalcopitan/bingo",
+    "authors": [
+        {
+            "name": "Anibal Copitan",
+            "email": "anibal@pprios.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AnibalCopitan\\Bingo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AnibalCopitan\\Tests\\Bingo\\": "tests/"
+        }
+      },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
