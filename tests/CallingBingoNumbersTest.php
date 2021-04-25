@@ -18,7 +18,20 @@ final class CallingBingoNumbersTest extends TestCase {
     public function testMethodIsAvailable() {
         
         $obj = new CallingBingoNumbers();
-        $this->assertIsNotCallable($obj);;
+        $this->assertIsNotCallable($obj);
+    }
+
+    /**
+     * Validation if the result is type integer
+     * 
+     * @return void
+     */
+    public function testTheResultIsNumber() {
+        
+        $obj = new CallingBingoNumbers();
+        $valueNumber = $obj->callOneNumber();
+
+        $this->assertIsInt($valueNumber);
     }
 
 
