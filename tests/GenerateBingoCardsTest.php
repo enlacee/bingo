@@ -33,4 +33,20 @@ final class GenerateBingoCardsTest extends TestCase {
         $this->assertArrayHasKey('g', $bingoArray);
         $this->assertArrayHasKey('o', $bingoArray);
     }
+
+    /**
+     * Count if has 25 items the array
+     * 
+     * @return void
+     */
+    public function testHas25UniqueSpaces() {
+        $obj = new GenerateBingoCards();
+        $bingoArray = $obj->create();
+
+        $this->assertCount(5, $bingoArray['b']);
+        $this->assertCount(5, $bingoArray['i']);
+        $this->assertCount(5, $bingoArray['n']);
+        $this->assertCount(5, $bingoArray['g']);
+        $this->assertCount(5, $bingoArray['o']);
+    }
 }
