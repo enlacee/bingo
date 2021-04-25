@@ -49,4 +49,18 @@ final class GenerateBingoCardsTest extends TestCase {
         $this->assertCount(5, $bingoArray['g']);
         $this->assertCount(5, $bingoArray['o']);
     }
+
+    /**
+     * Validion the if have a 1 Free space (represented by the number "0" )
+     * Zero emulate a FREE SPACE
+     * 
+     * @return void
+     */
+    public function testHasFreeSpaceInTheMiddle() {
+
+        $obj = new GenerateBingoCards();
+        $bingoArray = $obj->create();
+
+        $this->assertContains(0, $bingoArray['n']);
+    }
 }
