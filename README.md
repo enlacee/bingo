@@ -1,6 +1,7 @@
 # Anibal-Copitan-Bingo
 
 Application for emulate a BINGO PLAY (US) with two essential tasks
+[See more about requirements BINGO-KATA](/README/bingo-kata-requirements.pdf)
 
 1. Calling Bingo number
 2. Generate bingo card
