@@ -25,3 +25,7 @@ Execute test on terminal
 	./vendor/bin/phpunit tests/
 
 
+
+## IMG Ref
+
+![thumbnail](README/bingo-card-thumbanil.png)
